@@ -1,5 +1,6 @@
 import _ from "lodash";
 import "./style.css";
+import Icon from "./hannan1.jpg";
 
 function component() {
   const element = document.createElement("div");
@@ -7,6 +8,12 @@ function component() {
   //loadash now imported from this scriptnp
   element.innerHTML = _.join(["Hello", "webpack"], " ");
   element.classList.add("hello");
+
+  const myIcon = newImage;
+
+  myIcon.src = Icon;
+
+  element.appendChild(myIcon);
 
   return element;
 }
